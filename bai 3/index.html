@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <MARWUEE>
+      <img src="../vanh.jpg">
+    </MARWUEE>
+    <!--Danh sách-->
+    <!--Thẻ ol sử dụng để liệt kê danh sách có thứ tự-->
+    <p>Danh sách các công việc vào buổi sáng</p>
+    <ol>
+        <li>Thức dậy</li>
+        <li>Đánh răng</li>
+        <li>Ăn sáng</li>
+        <li>Đi học</li>
+        <li>Giải lao</li>
+    </ol>
+    <!--không thứ tự ul<li-->
+    <p>Các ngôn ngữ lập trình web</p>
+    <ul>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>Java</li>
+        <li>C#</li>
+    </ul>
+    <!--form dùng để tương tác người dùng-->
+    <h1>form</h1>
+    <form>
+        <div>
+            <b>Họ và tên</b>
+            <input type="text" name="hoten" placeholder="Nhập tên vào đây">
+        </div>
+        <div>
+            <b>Năm: </b>
+            <input type="text" name="nam" value="2025" readonly>
+        </div>
+        <div>
+           <b> Giới thiệu về bản thân</b> <br>
+                <textarea name="gioi thieu">Nhập giới thiệu...</textarea>
+            </div>
+            <br>
+            <div>
+        <br>
+        <div>
+            <b>Email: </b>    <br>
+            <input type="email" name="email" placeholder="Dạng @gmail,com">
+        </div>
+        <br>
+        <!---Số đầu tiên 0
+        Số thứ 2: 0,3,9  
+        8 số cuối 0-9 -->  
+                 
+        <div>
+            <b>Số điện thoại</b>   <br>
+            <input name="sodienthoai"
+            type="tel" placeholder="09xxxxxxxx"
+            required pattern="([0]{1}([0,3,9]{1})[0-9]{8})">
+            <input type="submit" value="Gửi">
+
+        </div>
+        <div> 
+            <b>Giới tính</b> <br>
+            <input type="radio" name="gioitinh" value="nam"> Nam <br>
+            <input type="radio" name="gioitinh" value="nu"> Nữ <br>
+            <input type="radio" name="gioitinh" value="khongxacdinh"> Không xác định <br>
+        </div>
+        <br>
+        <div> 
+            <b>Sở thích</b> <br>
+            Game: <input type="checkbox" name="sothich" value="game"> <br>
+            Music:<input type="checkbox" name="sothich" value="Music"> <br>
+            sport:<input type="checkbox" name="sothich" value="sport"> <br>
+        </div>
+        <br>
+        <div>
+            <b>Trình duyệt ưa thích</b> <br>
+            <input list="browsers">
+            <datalist id="browsers">
+               <option value="Internet Explorer">
+               <option value="Firefox">
+               <option value="Chrome">
+               <option value="Opera">
+               </datalist>
+               <br>
+               <select name="browsers">
+                 <option value="Internet Explorer">Internet Explorer</option>
+                 <option value="Firefox">Firefox</option>
+                 <option value="Chrome">Chrome</option>
+                 <option value="Opera">Opera</option>
+                 <option value="Safari">Safari</option>
+                 <option value="Cốc Cốc">Cốc Cốc</option>
+               </select>
+        </div>
+        <div>
+            0 <input type="range" value="20">100
+        </div>
+        <div>
+            <b>Tuổi</b> <br>
+            <input type="number" name="tuoi" step="0,5">
+        </div>
+        <br>
+        <div>
+            <b>Ngày tháng năm sinh</b>
+            <input type="date" name="" id="">
+        </div>
+        <br>
+        <div>
+           <b>Màu sắc yêu thích</b>
+            <input type="color" name="id">
+        </div>
+        <br>
+        <div>
+            <b>Chọn ảnh đại diện</b>
+            <input type="file">
+        </div>
+        <div>
+            <b>Mật khẩu</b>
+             <input type="password">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vl_JEcWkF3c?si=FDdeXYcHfpx5LHJ5" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <video controls width="560" height="315">
+        <source src="c:\hp\BIN\vanhn.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="c:\hp\BIN\vanhv.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
