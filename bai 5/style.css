@@ -1,13 +1,15 @@
 body{
     margin: 0px;
+    
 }
 ul{
     margin: 0px;
 }
 .DanhMuc{
     background-color: #2fa4e7;
-    padding: 20px;
+    padding: 10px;
 }
+
 .DanhMuc-DanhSach{
     display: flex;
     list-style: none; /*dùng để xóa dấu chấm của thẻ list */  
@@ -20,51 +22,167 @@ ul{
     text-decoration: none;
     font-size: x-large;
     font-weight: bold;
+    padding: 10px;
 }
-
-.danhmuc-lienket:hover {
-    color: grey;
-    
+.DanhMuc_LienKet:hover{
+    color: gray;
 }
-
-.logo {
-    height: 100px;
-    background-color: grey;
-}
-
-main {
+main{
     display: flex;
+    background-color: white;
 }
-
-.noidung-trai {
-    
+.NoiDung_Trai{
     width: 80%;
-}
-
-.noidung-phai {
-    height: 1000px;
-    background-color: chocolate;
-    width: 20%;
     border-radius: 10px;
-    /*border-radius chỉnh độ cong*/
+      /*border-radius chỉnh độ cong*/
+    background-color: rgb(247, 247, 247);
 }
-
+.NoiDung_Phai{    
+    width: 20%;
 .tieude {
+    background-color: lightskyblue;
+    padding: 20px; color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
+}
+}
+.logo {
+    height: 70px;
+    background-color:white;
+    display: flex;
+    margin-top: 5px;
+}
+h1 {
+    margin:0px;
+    margin-block: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    color:#006aa7 
+}
+h2{
+    font-size:20px;
+    margin-top: 1px;
+    margin-left: 5px; 
+    color:grey;
+}
+.TieuDe{
     background-color: #2fa4e7;
-    padding: 20px;
+    padding: 10px;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
 }
-
-.tintuc-danhsach{
+.TinTuc{
+    padding-bottom: 10px;
+}
+.TinTuc_DanhSach{
     display: flex;
     justify-content: space-between;
 }
-
-.baiviet{
-    height: 200px;
-    background-color: grey;
+.BaiViet{
+    height:200px;
+    background-color: white;
     width: 32%;
+    justify-content: center;
+}
+.BaiViet_TieuDe{
+    height: 10%;
+    text-align: right; /*canh phải*/
+    background-color: lightskyblue;
+}
+
+.BaiViet_Anh img{
+    width: 100%;
+    height: 150px;
+}
+.BaiViet_NoiDung{
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+.ThongBao{
+    padding-bottom: 5px;  /*khoảng trống bên dưới*/
+    background-color: white;
+}
+.ThongBao_DanhSach{
+    display: flex;
+}
+.ThongBao_Trai{
+    width: 30%;
+    padding: 20px;
+}
+.ThongBao_Trai_Logo img{
+    height: 210px;
+    width: 100%;
+}
+.ThongBao_Trai_ThoiGian{
+    text-align: end; /*canh xuống cuối dòng*/
+}
+.ThongBao_Trai_NoiDung{
+    color: rgb(13, 71, 107);
+    font-weight: bold;
+    font-size: large;
+}
+.ThongBao_Phai{
+    width: 90%;
+}
+.ThongBao_Phai table{
+    width: 100%;
+}
+.HuongDan_NoiDung_Trong{
+    width: 100%;
+}
+.ThongBao_Phai_ThoiGian{
+    text-align: end;
+    color: rgb(136, 130, 130);
+}
+.HuongDan_NoiDung_Trong table{
+    width: 100%;
+}
+.NoiDung_Phai{
+    padding-left: 10px;
+    background-color: white;
+}
+.dangnhap {
+    font-family: Time new roman;
+    background-color: grey;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+.danhnhap-taikhoan {
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    font-weight: bold;
+}
+.dangnhap-submit {
+    text-align: center;
+    margin: 10px;
+}
+.app {
+    font-family: Time new roman;
+    background-color: rgb(31, 83, 204);
+    padding: 20px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
+}
+.anhapp {
+    text-align: center;
+    margin: 5px;
+}
+.ketthuc{
+    background-color: #2fa4e7;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 0 0 10px 10px;
 }
