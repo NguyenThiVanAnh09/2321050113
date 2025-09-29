@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let toDay = new Date();
+
+        //mảng
+        let arr = [1, 2, 3, 4, 5, 'a','b',5,6];
+        //document.writeln(arr.length);
+        //document.writeln(arr[3]); //chỏ 1 phần tử trong mảng
+        //document.writeln(arr.indexOf('a')); //chỏ vị trí xuất hiện trong mảng
+        //document.writeln(arr.indexOf(5));
+        //document.writeln(arr.lastIndexOf(5)); // trỏ vị trí cuối
+        //let a = "abc";
+        //document.writeln(Array.isArray(arr)); //ktra biến có phải array k
+         let a, b, c, d;
+         a = [1, 2, 3];
+         b = "JavaScript";
+         c = [42, "VBScript"];
+         d = a.concat(b, c); // nối mảng a b c
+         d[3] = 4; //trỏ vị trí cần thay thế
+         //document.writeln(d);
+        // document.writeln(d.join(" ")); // cách ở trong " "
+        // e = d.pop(); // bỏ đi lấy phẩn tử cuối
+        //document.writeln(e);
+        d.push("Kiên") // thêm phần tử trong mảng ở vtri cuối
+        document.writeln(d);
+        //document.writeln(d.reverse()); //đảo vị trí trong mảng
+        //shift() : xóa phần tử đầu tiên.  arr.shift()
+        //unshift() : thêm phần tử vào đầu mảng.  arr.unshift(0)
+
+        //IF - ELSE
+
+        let today = new Date ();
+        let now = today.getHours(); //11 
+        if (now < 10)
+        if (today.getHours() < 10) {
+             document.writeln("Chào buổi sáng");
+        }
+       else if (now < 10 && now <12) {
+            document.writeln("Chào buổi trưa");
+        }
+        else if (now <= 12 && now < 17) {
+             document.writeln("Chào buổi chiều");
+        }
+        else if (now <= 17 && now < 22) {
+             document.writeln("Chào buổi tối");
+        }
+        else (now <= 22 && now <24) 
+           document.writeln("Chào buổi đêm"); 
+        
+
+        //ktra số chẵn hay lẻ
+ 
+        let so = "10000000001";
+        //document.writeln(so[so.length-1]);
+        let soCuoiCung = parseInt(so[so.length - 1]); // dùng số lớn
+        if(so % 2 == 0) {
+             document.writeln("là số chẵn");
+        }
+        else {
+            document.writeln("là số lẻ");
+        }
+
+
+         
+    </script>
+</body>
+</html>

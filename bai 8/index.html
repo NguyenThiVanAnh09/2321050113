@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>java</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <script>
@@ -38,11 +39,11 @@
             diaChiGiaoHang: "Đông Ngạc"
         }
         
-        let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
-        let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
-        let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+     //   let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
+     //   let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        //let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
 
-        let tongTien = tongSP1 + tongSP2 + tongSP3;
+       // let tongTien = tongSP1 + tongSP2 + tongSP3;
 
         //document.writeln("Tong tien don hang = " + tongTien);
         //document.writeln("Độ dài của mã đơn hàng = " + thongTinDonHang.maDonHang.length );
@@ -59,31 +60,31 @@
         //document.writeln(myString.includes('e')); // có true, k false
         //tách chuỗi thành mảng
         //document.writeln(myString.split(' '));
-        let danhSach = ["Phạm Tiệp Anh", "Nguyễn Tiến Bách", "Lương Ngọc Bích", "Nguyễn Thành Danh"];
-        document.writeln(danhSach[1].startsWith("Nguyễn"));
-        //chuyển chuổi về số
-        let so ="123";
-        document.writeln(typeof (so));
-        document.writeln(typeof (Number(so)));
+       // let danhSach = ["Phạm Tiệp Anh", "Nguyễn Tiến Bách", "Lương Ngọc Bích", "Nguyễn Thành Danh"];
+       // document.writeln(danhSach[1].startsWith("Nguyễn"));
+
+        //chuyển chuổi về so
+        //let so ="123";
+       // document.writeln(typeof (so));
+       // document.writeln(typeof (Number(so)));
         // toFixed() định dạng số vs số chữ số thập phân nhất định
-        var pi = "3.14159";
-        pi.toFixed(2);
+       // var pi = "3.14159";
+        //pi.toFixed(2);
+
         //Ktra số
         // isNaN(): ktra xem 1 giá trị có phải là NaN hay k (not a number)
         //isFinite(): ktra xem 1 giá trị có phải là số hữu hạn hay k
 
-        isNaN(NaN); //true
-        isFinite(NaN); //true
+       // isNaN(NaN); //true
+        //isFinite(NaN); //true
 
         //Date
-        let toDay = new Date();
-        document.writeln(toDay.getMonth); //ngày hôm nay
-
-
-
-
-        
-        
+          let toDay = new Date (); // ngầy cụ thể trong new date : năm tháng ngày
+          document.writeln(today());
+        // lấy ngày tháng năm 
+        //getFullYear();
+        //let toDay = new Date ();
+        document.writeln(today()); 
 
     </script>
 </body>
