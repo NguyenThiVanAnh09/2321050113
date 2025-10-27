@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <h2> Ví dụ về chế độ </h2>
+        <div class="anh">
+            <img style="width: 100px;height: 100px" src="./mattroi.png" alt="">
+        </div> 
+        <h2>Chế độ sáng</h2>
+        <div class="cuoi">
+            <button onclick="doiCheDo()"> Đổi chế độ </button>
+        </div>
+
+    </div>
+    <script>
+        let cheDo = true;
+        function doiCheDo() {
+            if (cheDo == true) {
+                document.getElementsByTagName('body')[0].style = 'background-color: black';
+                 //trỏ đối tượng = tên của thẻ
+                 document.getElementsByTagName('h2')[1].innerHTML = 'chế độ: Tối';
+                 document.getElementsByTagName('h2')[0].style = 'color: white';
+                 document.getElementsByTagName('h2')[1].style = 'color: white';
+                 document.getElementsByTagName('img')[0].src ='mattrang.png';
+                 cheDo =false;
+            }
+            else {
+                document.getElementsByTagName('body')[0].style = 'background-color: white';
+                //trỏ đối tượng = tên của thẻ
+                document.getElementsByTagName('h2')[1].innerHTML = 'chế độ: Sáng';
+                document.getElementsByTagName('h2')[0].style = 'color: black';
+                document.getElementsByTagName('h2')[1].style = 'color: black';
+                document.getElementsByTagName('img')[0].src ='mattroi.png';
+                cheDo =true;
+            }
+        }
+    </script>
+    
+</body>
+</html>

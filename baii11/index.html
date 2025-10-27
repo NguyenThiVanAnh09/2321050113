@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baii 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bài 11</h1>
+<h2>Tính điểm</h2>
+<div>
+    Điểm A: <input type="number" id="diemA" placeholder="Nhập điểm A">
+</div>
+<div>
+    Điểm B: <input type="number" id="diemB" placeholder="Nhập điểm B">
+</div>
+<div>
+    Điểm C: <input type="number" id="diemC" placeholder="Nhập điểm C">
+</div>
+<div>
+    <button onclick="xemKQ()">Tính điểm</button>
+</div>
+<div>
+    Kết quả: <input type="text" id="ketQua">
+</div>
+
+    <script>
+        function kiemTraHopLe (a,b,c){
+            let kiemTra = true;
+            if(a<0 || a>10 || typeof(a) != 'number'){
+                document.writeln(" điểm a không hợp lệ !");
+                kiemTra = false;
+            }
+            if(b<0 || b>10 || typeof(b) != 'number'){
+                document.writeln(" điểm b không hợp lệ !");
+                kiemTra = false;
+            }
+            if(c<0 || c>10 || typeof(c) != 'number'){
+                document.writeln(" điểm c không hợp lệ !");
+                kiemTra = false;
+            }
+            return kiemTra;
+        }
+        
+        function tinhTong (a,b,c){
+            let tong;
+            if(kiemTraHopLe(a,b,c) == true ){
+                tong =  a*0.6 + b*0.3 +c * 0.1;
+                if(tong>9){
+                    return( tong +" điểm A !");
+                }
+                if(tong<=9 && tong > 7){
+                    return( tong +" điểm B !");
+                }
+                if(tong<=7 && tong>5){
+                    return( tong +" điểm C !");
+                }
+                if(tong<=5 && tong >=1){
+                    return( tong +" điểm D !");
+                }
+                if(tong<1){
+                    return( tong +" điểm F !");
+                }
+            }
+        }
+      //parseFloat chuyển về số thực
+      //getElementById lấy gt in tra từ thẻ input
+        
+        function xemKQ (){
+            let diemA =parseFloat( document.getElementById("diemA").value);
+            let diemB = parseFloat(  document.getElementById("diemB").value);
+            let diemC = parseFloat( document.getElementById("diemC").value);
+            document.getElementById("ketQua").value= tinhTong(diemA,diemB,diemC);
+        }
+    </script>
+</body>
+</html>

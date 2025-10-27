@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11 </title>
+</head>
+<body>
+    <h1> Bài 11</h1>
+   <!-- Tạo hàm JS tính dsdieemr của sinh viên dựa trên 3 điểm A B C  -->
+   <!-- biết điểm của tổng A * 0.6 + B*0.3 + C*0.1   -->
+    <h2>Tính điểm h2</h2>
+    <div>
+        Điểm A: <input type="number" id="diemA" placeholder = "Nhập điểm A">
+    </div>
+     <div>
+        Điểm B: <input type="number" id="diemB" placeholder = "Nhập điểm B">
+    </div>
+     <div>
+        Điểm C: <input type="number" id="diemC" placeholder = "Nhập điểm C">
+    </div>
+    <div>
+        <button onclick="xemKetQua"()>Tính điểm</button>
+    </div>
+    <div> Kết quả: <input type="text" id="ketqua"> </div>
+<script>
+//     function tinhDiem (){
+//     let A = parseFloat(prompt("Mời bạn nhập điểm A"));
+//     let B = parseFloat(prompt("Mời bạn nhập điểm B "));
+//     let C = parseFloat(prompt(" Mời bạn nhập điểm C"));
+//      let tinhdiem = A * 0.6 + B*0.3 + C*0.1;
+//      return tinhdiem;
+//     }
+//  let diem = tinhDiem();
+// document.writeln(diem);
+
+function  xemKetQua() {
+    let diemA = parseFloat (document.getElementById('diemA').value);
+    let diemB = parseFloat (document.getElementById('diemB').value);
+    let diemC = parseFloat (document.getElementById('diemC').value);
+    tinhDiem(diemA, diemB, diemC);
+}
+
+function tinhDiem (a,b,c) {
+    let tong;
+    if (kiemTraHopLe(a,b,c) == true) {
+        tong = a* 0.6 + b*0.3 + c*0.1;
+        document.writeln(tong);
+    }
+    // if (tong >= 9 ) {
+    //     document.writeln( "điểm chữ là A+");
+    // }
+    // else if (tong >= 8.5 && tong < 9) {
+    //    document.writeln( "điểm chữ là A");
+    // }
+    //  else if (tong >= 8 && tong < 9) {
+    //    document.writeln( "điểm chữ là A");
+    // }
+    // else if (tong >7) {
+    //    document.writeln( "điểm chữ là B");
+    // }
+
+if (tongDiem >= 9) {
+            hang = "A+";
+        } else if (tongDiem >= 8.5) {
+            hang = "A";
+        } else if (tongDiem >= 8) {
+            hang = "B+";
+        } else if (tongDiem >= 7) {
+            hang = "B";
+        } else if (tongDiem >= 6.5 ) {
+            hang = "C+";
+        } else if (tongDiem >= 5.5) {
+            hang = "C";
+        } else if (tongDiem >= 5) {
+            hang = "D+";
+        } else if (tongDiem >= 4) {
+            hang = "D";
+        } else {
+            hang = "F";
+        }
+
+}
+function kiemTraHopLe() {
+    let ketQua = true;
+    if (a < 0 || a > 10 || typeof(a) !="number") {
+        document.writeln( "Điểm A k hợp lệ");
+    }
+     if (b < 0 || b > 10 || typeof(b) !="number") {
+        document.writeln( "Điểm B k hợp lệ");
+    }
+     if (c < 0 || c > 10 || typeof(c) !="number") {
+        document.writeln( "Điểm C k hợp lệ");
+    }
+    return;
+}
+let tongDiem = a * 0.6 + b * 0.3 + c * 0.1;
+let hang;
+document.getElementById("ketQua").value = tongDiem.toFixed(2) + "- Hạng:" + hang;
+let a = 9;
+let b = 5;
+let c = 9;
+tinhDiem(a,b,c);
+
+
+</script>
+</body>
+</html>

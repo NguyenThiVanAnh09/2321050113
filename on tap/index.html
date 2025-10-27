@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Toán Lý Hóa</h1>
+    <div> Nhập điểm Toán:</div>
+    <input type="number" id="Toan" placeholder="Nhập điểm Toán">
+
+    <div>Nhập điểm Lý:</div>
+    <input type="number" id="Ly" placeholder="Nhập điểm Lý">
+
+    <div>Nhập điểm Hóa:</div>
+    <input type="number" id="Hoa" placeholder="Nhập điểm Hóa">
+
+    <div>
+        <button onclick="xemKetQua()">Tính điểm</button>
+    </div>
+
+    <div>
+        Kết quả: <input type="text" id="trungBinh" readonly>
+    </div>
+
+    <script>
+        function xemKetQua() {
+            let Toan = parseFloat(document.getElementById("Toan").value);
+            let Ly = parseFloat(document.getElementById("Ly").value);
+            let Hoa = parseFloat(document.getElementById("Hoa").value);
+
+            // kiem tra dieu kien
+            if (isNaN(Toan) || Toan < 0 || Toan > 10) {
+                document.writeln("Nhập lại điểm Toán <br>");
+                return;
+            }
+            if (isNaN(Ly) || Ly < 0 || Ly > 10) {
+                document.writeln("Nhập lại điểm Lý <br>");
+                return;
+            }
+            if (isNaN(Hoa) || Hoa < 0 || Hoa > 10) {
+                document.writeln("Nhập lại điểm Hóa <br>");
+                return;
+            }
+
+            let trungBinh = (Toan + Ly + Hoa) / 3;
+
+            document.getElementById("trungBinh").value = trungBinh.toFixed(2);
+            let hang;
+
+            if (trungBinh >= 9) {
+                hang = "Xuất sắc";
+            } else if (trungBinh >= 8) {
+                hang = "Giỏi";
+            } else if (trungBinh >= 6.5) {
+                hang = "Khá";
+            } else if (trungBinh >= 5) {
+                hang = "Trung bình";
+            } else {
+                hang = "Yếu";
+            }
+
+        document.getElementById("trungBinh").value = trungBinh.toFixed(2) + " - Xếp loại: " + hang;
+        }   
+    </script>
+</body>
+
+</html>
