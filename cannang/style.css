@@ -1,0 +1,47 @@
+
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+.container {
+    background-color: white;
+    border-radius: 16px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+   font-size: 16px;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+.anh {
+    margin-top: 20px;
+    width: 180px; 
+    height: 300px;
+}

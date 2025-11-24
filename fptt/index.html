@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fpt</title>
+    <title>FPT</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <div class="header-container">
             <!-- Danh mục trang web -->
             <nav class="danhmuc">
-                <img class="logo" src="./Screenshot 2025-09-10 191824.png" alt="">
+                <img class="logo" src="logo.png" alt="">
                 <ul class="danhmuc-danhsach">
                     <li class="danhmuc-lienket"><a href="#">Trang chủ</a></li>
                     <li class="danhmuc-lienket"><a href="#">Truyền hình</a></li>
@@ -36,20 +37,173 @@
     </header>
     <main>
         <div class="quangcao">
-            
+            <img src="fptplay.jpg" alt="">
         </div>
         <div class="container">
             <div>
-                <div style="display: flex; justify-content: center;">
-                    <img class="banner" src="./fpt2.jpg" alt="">
+                <div class="quangcao-phim">
+                    <img class="banner" src="640x396-muado.jpg" alt="">
+                    <iframe class="trailer" width="913" height="514" src= "https://www.youtube.com/embed/si=FDdeXYcHfpx5LHJ5" referrerpolicy="" allowfullscreen></iframe>
+                    <div class="danhsach-tt">
+                        <div class="tt">
+                            <ul>
+                                <li class="tt-year"></li>
+                                <li class="tt-tuoi"></li>
+                                <li class="tt-hour"></li>
+                                <li class="tt-nation">Việt Nam</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 20px">
+                            <button onclick="viewTrailer()" class="xemngay">Xem ngay</button> 
+                        </div>                    
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <img class="qc" src="./mua.webp" alt="">
+                </div>  
+                
+             <div class="theloai">
+                <div class="tentheloai">
+                    Phim chiếu rạp
+                </div>
+                <div class="danhsach">
+                    <div class="phim" onclick="chooseFilm(1)">
+                        <div class="anh">   
+                            <img src="350x495-muado.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Mưa đỏ
+                        </div>
+                    </div>
+                    <div class="phim" onclick="chooseFilm(2)">
+                        <div class="anh">
+                            <img src="giataiofngoai.png" alt="">
+                        </div>
+                        <div class="ten">
+                             Gia tài của ngoại
+                        </div>  
+                    </div>
+                    <div class="phim" onclick="chooseFilm(3)">
+                        <div class="anh">
+                            <img src="mai.png" alt="">
+                        </div>
+                        <div class="ten">
+                           Mai
+                        </div>
+                    </div>
+                    <div class="phim" onclick="chooseFilm(4)">  
+                        <div class="anh">
+                            <img src="tuchientren0.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Tử chiến trên không
+                        </div>
+                    </div>
+                    <div class="phim" onclick="chooseFilm(5)">
+                        <div class="anh">
+                            <img src="nuhonbacti.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Nụ hôn bạc tỷ
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim điện ảnh hay nhất
+                </div>
+                <div class="danhsach">
+                    <div class="phim" onclick="chooseFilm(6)">
+                        <div class="anh">
+                            <img src="khododanhh.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            Khó dỗ dành
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="door.png" alt="">
+                        </div>
+                        <div class="ten">
+                           Love next door
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="bnbn.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Friendly Rivarly
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="remnchsa.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Rèm ngọc châu sa
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="quyt.png" alt="">
+                        </div>
+                        <div class="ten">
+                            When Life Gives You Tangerines
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                    Phim hoạt hình
+                </div>
+                <div class="danhsach">
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="conan.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Conan
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="op.jpg" alt="">
+                        </div>
+                        <div class="ten">
+                            One Piece
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="ft.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Fairy tail
+                        </div>
+                    </div>
+                    <div class="phim">
+                        <div class="anh">
+                            <img src="quy.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Kimetsu No Yaiba
+                        </div>
+                    </div>
+                    <div class="phim" onclick="chooseFilm(7)">
+                        <div class="anh">
+                            <img src="domon.png" alt="">
+                        </div>
+                        <div class="ten">
+                            Doraemon
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theloai">
+                <div class="tentheloai">
+                    Phim Tâm Lý Đỉnh Cao
                 </div>
                 <div class="danhsach">
                     <div class="phim">
@@ -96,7 +250,7 @@
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim Kinh Dị 
                 </div>
                 <div class="danhsach">
                     <div class="phim">
@@ -143,148 +297,7 @@
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
-                </div>
-                <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="theloai">
-                <div class="tentheloai">
-                    Phim chiếu rạp
-                </div>
-                <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="theloai">
-                <div class="tentheloai">
-                    Phim chiếu rạp
-                </div>
-                <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="theloai">
-                <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim Hài Hước 
                 </div>
                 <div class="danhsach">
                     <div class="phim">
@@ -330,61 +343,74 @@
                 </div>
             </div>
         </div>
+      <!-- <script> 
+        function chuyentraller(){
+            document.getElementById('banner').src =""
+        }
+        </script>  -->
     </main>
     <footer>
-<nav class="footer">
-  <div class="footer-container">
-    <!-- Cột logo -->
-    <div class="footer-logo">
-      <img src="./Screenshot 2025-09-10 193452.png" alt="">     
-    </div>
-
-    <div class="footer-column">
-      <p>Về FPT Play</p>
-      <div class="footer-lienket"></div><a href="#">Giới thiệu</a>
-      <div class="footer-lienket"></div><a href="#">Các gói dịch vụ</a>
-      <div class="footer-lienket"></div><a href="#">Liên hệ</a>
-      <div class="footer-lienket"></div><a href="#">Trung tâm hỗ trợ</a>
-      <div class="footer-lienket"></div><a href="#">Thông tin</a>
-    </div>
-
-    <div class="footer-column">
-      <p>Dịch vụ</p>
-      <div class="footer-lienket"></div><a href="#">Gói DATA</a>
-      <div class="footer-lienket"></div><a href="#">Quảng cáo</a>
-      <div class="footer-lienket"></div><a href="#">Mua gói</a>
-      <div class="footer-lienket"></div><a href="#">Bảo hành</a>
-    </div>
-
-    <div class="footer-column">
-      <p>Quy định</p>
-      <div class="footer-lienket"></div><a href="#">Điều khoản sử dụng</a>
-      <div class="footer-lienket"></div><a href="#">Chính sách thanh toán</a>
-      <div class="footer-lienket"></div><a href="#">Chính sách bảo mật</a>
-      <div class="footer-lienket"></div><a href="#">Cam kết của FPT Telecom</a>
-    </div>
-
-    <!-- Cột liên hệ -->
-    <div class="footer-lienhe">
-      <p>sdt: 19006600</p>
-      <p>gm: hotrofptplay@fpt.com</p>
-      <p>follow chúng tôi trên: fp, yt</p>
-</nav>   
-  </div> 
-  </div>
-  </div>
-</footer>
-<footer>
-<div class="ketthuc">
-  <p>Công ty Cổ phần Viễn Thông FPT- Người đại diện: Ông Hoàng Việt Anh.</p>
-  <p>Trụ sở: Tầng 2, Tòa nhà FPT Cầu Giấy, Số 17 Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, TP. Hà Nội</p>
-  <p>Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội</p>
-  <p>Số điện thoại liên hệ: 024 7300 2222</p>
-  <p>Thư điện tử: hotrokhachhang@fpt.com hoặc hotrofptplay@fpt.com</p>
-  <p>Giấy chứng nhận đăng ký doanh nghiệp số: 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp lần đầu ngày 28/7/2005, cấp đăng ký thay đổi lần thứ 32 vào ngày 21/12/2023.</p>
-  <p>Giấy phép cung cấp dịch vụ phát thanh, truyền hình trả tiền số: 377/GP-BTTTT cấp sửa đổi bổ sung lần 1 ngày 10/10/2023.</p>
-</div>
-</footer>
+      <div class="footer-container">
+        <div class="footer-column">   
+          <div class="footer-logo">
+            <img src="fpt.png" alt="">
+          </div>
+          
+        </div> 
+            <div class="footer-column">
+             <p>Về FPT Play</p>
+              <div class="footer-links">
+                <a href="#">Giới thiệu</a>
+                <a href="#">Các gói dịch vụ</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Trung tâm hỗ trợ</a>
+                <a href="#">Thông tin</a>   
+              </div>
+            </div>
+             <div class="footer-column">
+              <p>Dịch vụ</p>
+              <div class="footer-links">
+                <a href="#">Gói DATA</a>
+                <a href="#">Quảng cáo</a>
+                <a href="#">Mua gói</a>
+                <a href="#">Bảo hành</a>
+              </div>
+            </div>
+             <div class="footer-column">
+              <p>Quy định</p>
+              <div class="footer-links">
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách thanh toán</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Cam kết của FPT Telecom</a>
+              </div>
+            </div>
+            <div class="footer-column">
+                <p>19006600</p>
+                <p>hotrofptplay@fpt.com</p>
+                <p>Theo dõi chúng tôi trên:</p>
+                <div class="footer-mangxh">
+                    <a href="https://www.facebook.com/fptplay">
+                        <img src="fb.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/c/FPTPLAYTVOnline">
+                         <img src="yt.png" alt="">
+                    </a>
+                </div>
+            </div>  
+      </div>
+       <div class="footer-cuoi">
+            <p>Công ty Cổ phần Viễn Thông FPT - Người đại diện: Ông Hoàng Việt Anh. 
+               Trụ sở: Tầng 2, Tòa nhà FPT Cầu Giấy, Số 17 Phố Duy Tân, Phường Dịch Vọng
+               Hậu, Quận Cầu Giấy, TP.Hà Nội</p>
+            <p>Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội</p>
+            <p>Số điện thoại liên hệ: 024 7300 2222.</p>
+            <p>Thư điện tử: hotrokhachhang@fpt.com hoặc hotrofptplay@fpt.com</p>
+            <p>Giấy chứng nhận đăng ký doanh nghiệp số 0101778163 do Sở KH&ĐT Hà Nội cấp lần đầu ngày 28/7/2005, thay đổi lần thứ 32 ngày 21/12/2023.</p> 
+            <p>Giấy phép cung cấp dịch vụ phát thanh, truyền hình trả tiền số 377/GP-BTTTT cấp sửa đổi bổ sung lần 1 ngày 10/10/2023.</p>
+        </div>
+    </footer>
+       <script src="scrip.js"></script>
 </body>
 
 </html>
